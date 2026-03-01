@@ -1,0 +1,37 @@
+{
+    "name": "webext-form-validator",
+    "version": "0.1.0",
+    "description": "Form validation library for Chrome extensions — field validators, custom rules, error messages, real-time validation, and password strength checking for MV3.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "form",
+        "validation",
+        "validator",
+        "input",
+        "password",
+        "manifest-v3",
+        "browser-extension",
+        "ui"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/webext-form-validator.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
