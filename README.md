@@ -1,5 +1,5 @@
 [![CI](https://github.com/theluckystrike/webext-form-validator/actions/workflows/ci.yml/badge.svg)](https://github.com/theluckystrike/webext-form-validator/actions)
-[![npm](https://img.shields.io/npm/v/webext-form-validator)](https://www.npmjs.com/package/webext-form-validator)
+[![npm](https://img.shields.io/npm/v/@theluckystrike/webext-form-validator)](https://www.npmjs.com/package/@theluckystrike/webext-form-validator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
 
@@ -10,13 +10,13 @@ Form validation library for Chrome extensions built with TypeScript. Provides fi
 ## INSTALLATION
 
 ```bash
-npm install webext-form-validator
+npm install @theluckystrike/webext-form-validator
 ```
 
 ## QUICK START
 
 ```typescript
-import { FormValidator } from 'webext-form-validator';
+import { FormValidator } from '@theluckystrike/webext-form-validator';
 
 const validator = new FormValidator();
 validator.required('email').email('email').minLength('password', 8);
